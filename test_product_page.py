@@ -4,6 +4,7 @@ from test_data import PRODUCT_PAGE_PROMO
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
 from pages.product_page import ProductPage
+from pages.basket_page import BasketPage
 import pytest
 import time
 
@@ -51,7 +52,7 @@ def test_message_disappeared_after_adding_product_to_basket(browser):
     page.should_be_be_added_thing_in_basket_with_success()
     page.success_message_should_disappear()
 
-    
+
 @pytest.mark.skip(reason="Just skip for testing another cases")
 def test_guest_should_see_login_link_on_product_page(browser):
     link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
@@ -59,9 +60,17 @@ def test_guest_should_see_login_link_on_product_page(browser):
     page.open()
     page.should_be_login_link()
 
-
+@pytest.mark.skip(reason="Just skip for testing another cases")
 def test_guest_can_go_to_login_page_from_product_page(browser):
     page = ProductPage(browser, PRODUCT_PAGE_PROMO)
     page.open()
     page.should_be_login_link()
     page.go_to_login_page()
+
+def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
+    page = ProductPage(browser, PRODUCT_PAGE_PROMO)
+    page.open()
+    page.should_be_view_busket_button()
+    page.go_to_basket_page()
+    basket_page = BasketPage(browser, browser.current_url)
+    basket_page.should_be_basket_empty()
