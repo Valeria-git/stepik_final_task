@@ -23,14 +23,11 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     ADD_TO_BUSKET_BUTTON = (By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.btn-add-to-basket")
+  
+    PRODUCT_ADDED_TO_BUSKET_MESSAGE = (By.CSS_SELECTOR, "div.alert:nth-child(1) .alertinner")
 
-    PRODUCT_ADDED_TO_BUSKET_MESSAGE = (By.XPATH, "//div[contains(@class, 'alertinner') and contains(., 'has been added')]")
-
-    PRODUCT_NAME_IN_THE_PRODUCT_PAGE = (By.CSS_SELECTOR, "div.product_main > h1")
-    PRODUCT_NAME_IN_THE_BUSKET = (By.CSS_SELECTOR, ".breadcrumb .active")
-
-    TOTAL_COST_BUSKET = (
-        By.XPATH, 
-        "//div[contains(@class,'alertinner')]//p[contains(., 'Your basket total is now')]/strong"
-        )
-    PRODUCT_COST = (By.CSS_SELECTOR, ".col-sm-6.product_main .price_color")
+    PRODUCT_NAME_IN_THE_PRODUCT_PAGE = (By.CSS_SELECTOR, ".col-sm-6.product_main >h1")
+    PRODUCT_NAME_IN_THE_BUSKET = (By.CSS_SELECTOR, "div.alert:nth-child(1) .alertinner strong")
+ 
+    PRODUCT_COST = (By.CSS_SELECTOR, "#content_inner > article > div.row > div.col-sm-6.product_main > p.price_color")
+    TOTAL_COST_BUSKET = (By.CSS_SELECTOR, "div.alert:nth-child(3) .alertinner p strong")

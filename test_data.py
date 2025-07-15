@@ -1,3 +1,5 @@
 MAIN_PAGE_LINK = "http://selenium1py.pythonanywhere.com/"
 LOGIN_PAGE_LINK = "https://selenium1py.pythonanywhere.com/en-gb/accounts/login/"
 PRODUCT_PAGE = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear)"
+PRODUCT_PAGE_CODERS = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
+PRODUCT_PAGE_PROMO = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0"
