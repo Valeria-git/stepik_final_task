@@ -1,6 +1,7 @@
 from .base_page import BasePage
+from .locators import BasePageLocators
 from .locators import LoginPageLocators
-
+from test_data import LOGIN_PAGE_LINK
 
 class LoginPage(BasePage):
 
@@ -11,7 +12,7 @@ class LoginPage(BasePage):
 
     def should_be_login_url(self):
         actual_url = self.browser.current_url
-        expected_url = LoginPageLocators.LOGIN_PAGE
+        expected_url = LOGIN_PAGE_LINK
         assert actual_url == expected_url, f"Expected URL to be {expected_url}, but got {actual_url}"
 
 

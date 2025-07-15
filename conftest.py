@@ -23,8 +23,8 @@ def browser(request):
         raise pytest.UsageError("--language should be one of: en, ru, es, fr, de")
 
     options = Options()
-    #options.add_argument('headless')
-    #options.add_argument('window-size=1920x935')
+    options.add_argument('headless')
+    options.add_argument('window-size=1920x935')
     options.add_experimental_option('prefs', {'intl.accept_languages': browser_language})
     browser = webdriver.Chrome(options=options)
     if browser:
