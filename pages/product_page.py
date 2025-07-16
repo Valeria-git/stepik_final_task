@@ -15,6 +15,7 @@ class ProductPage(BasePage):
 
     def should_be_product_added_to_busket(self):
         button = self.browser.find_element(*ProductPageLocators.ADD_TO_BUSKET_BUTTON)
+        assert button.is_displayed() and button.is_enabled(), "Кнопка добавления в корзину недоступна"
         button.click()
 
     def should_be_solved_quiz(self):

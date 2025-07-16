@@ -19,7 +19,7 @@ class TestLoginFromMainPage():
 def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     page = BasketPage(browser, MAIN_PAGE_LINK)
     page.open()
-    page.should_be_view_busket_button()
+    page.should_be_view_basket_button()
     page.go_to_basket_page()
     page.should_be_basket_empty()
 
