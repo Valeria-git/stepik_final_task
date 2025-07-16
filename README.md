@@ -13,7 +13,7 @@ pytest -v --tb=line --language=en FILE_NAME.py
 If you are reviewing this project, please use the following command to run the key tests marked with `@pytest.mark.need_review`:
 
 ```bash
-pytest -v -s -m need_review --tb=line --language=en test_product_page.py
+pytest -v --tb=line --language=en -m need_review
 ```
 
 ## Project structure
