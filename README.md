@@ -24,4 +24,4 @@ The structure of this project differs slightly from the one suggested in the ori
 - `test_data.py` – stores links and test-related constants.
 
 ## Notes
-If you have issues with running my test, try to change imports paths/delete __init__.py files
+If you have issues with running my test, try to change imports paths/delete __init__.py files/change version of pytest and selenium
