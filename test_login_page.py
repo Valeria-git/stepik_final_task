@@ -1,7 +1,9 @@
-from test_data import LOGIN_PAGE_LINK
-from test_data import MAIN_PAGE_LINK
-from pages.login_page import LoginPage
-from pages.main_page import MainPage
+from test_data import LOGIN_PAGE_LINK, MAIN_PAGE_LINK
+from .pages.login_page import LoginPage
+
+# from test_data import MAIN_PAGE_LINK
+# from pages.login_page import LoginPage
+from .pages.main_page import MainPage
 
 def test_guest_can_go_to_login_page(browser):
     page = MainPage(browser, MAIN_PAGE_LINK)

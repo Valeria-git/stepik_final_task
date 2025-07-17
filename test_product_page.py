@@ -1,11 +1,8 @@
 from pages.product_page import ProductPage
 from test_data import PRODUCT_PAGE_PROMO
 from pages.login_page import LoginPage
-from pages.main_page import MainPage
-from pages.product_page import ProductPage
 from pages.basket_page import BasketPage
-from utils.helper import generate_password
-from utils.helper import generate_email
+from utils.helper import generate_password, generate_email
 import pytest
 
 

@@ -1,6 +1,9 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 def pytest_addoption(parser):
     parser.addoption(

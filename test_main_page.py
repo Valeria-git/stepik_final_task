@@ -1,5 +1,5 @@
-from pages.main_page import MainPage
-from pages.basket_page import BasketPage
+from .pages.main_page import MainPage
+from .pages.basket_page import BasketPage
 import pytest
 from test_data import MAIN_PAGE_LINK
 

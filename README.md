@@ -24,5 +24,4 @@ The structure of this project differs slightly from the one suggested in the ori
 - `test_data.py` – stores links and test-related constants.
 
 ## Notes
-
-I am **not using** an `__init__.py` file in the root directory, as it caused import issues. All tests and modules are working without it in the current structure.
+If you have issues with running my test, try to change imports paths/delete __init__.py files

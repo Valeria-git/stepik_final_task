@@ -1,8 +1,5 @@
 from .base_page import BasePage
-from .locators import BasePageLocators
-from .locators import LoginPageLocators
 from .locators import BasketPageLocators
-from test_data import LOGIN_PAGE_LINK
 
 
 class BasketPage(BasePage):

@@ -5,8 +5,7 @@ import math
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from .locators import BasePageLocators
-from .locators import LoginPageLocators
-import time
+
 
 
 class BasePage():
